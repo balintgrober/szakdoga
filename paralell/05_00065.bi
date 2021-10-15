@@ -1,8 +1,0 @@
-National orb  Országalma 
-The orb is the symbol of the coronation city of Székesfehérvár.  Az Országalma Székesfehérvár, a koronázó város szimbóluma. 
-This is where most Hungarian kings were buried, starting with St. István (Stephen), and later including Kálmán Könyves, Róbert Károly, Lajos Nagy, King Matthias and János Szapolyai.  Itt temették el királyaink nagy többségét Szent Istvántól, Könyves Kálmánon, Károly Róberten, Nagy Lajoson, Mátyás királyon át, Szapolyai Jánosig. 
-It is also the place where King István and Prince Imre were canonized, and where Europe's second constitution, the “Golden Bull”, was proclaimed.  Itt avatták szentté István királyt és Imre herceget, itt hirdették ki Európa második alkotmányát, az Aranybullát. 
-The stone fruit, known as the national orb, is located in the town hall square, just in front of the Bishop's Palace.  Az Országalma nevû kõgyümölcs a városháza téren, a Püspöki Palota elõtt áll. 
-This ornamental red marble fountain, representing one of the coronation symbols for Hungarian kings, was made by Béla Ohmann.  A magyar királyok koronázó jelvényeinek egyikét ábrázoló vörös márvány díszkút, Ohmann Béla alkotása. 
-It is held in place by three stone lions, and has three dates defining the city's history - 1001, 1688 and 1938 - at its base.  Három kõoroszlán tartja, alapzatán három, a város történelmét meghatározó évszám - 1001, 1688, 1938 - áll. 
-The Latin inscription around the orb, LIBERTATES CIVITATIS ALBENSIS A S. REGE STEPHANO CONCESSAE, means "St. István gave Fehérvár its right to freedom".  Az országalmán körbefutó latin felirat LIBERTATES CIVITATIS ALBENSIS A S. REGE STEPHANO CONCESSAE jelentése: 
