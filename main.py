@@ -20,10 +20,17 @@ SOS_token = 0
 EOS_token = 1
 teacher_forcing_ratio = 0.5
 
+def filterPair(p):
+    return len(p[0].split(' ')) < 80 and len(p[1].split(' ')) < 80
+
+def filterPairs(pairs):
+    return [pair for pair in pairs if filterPair(pair)]
 
 def prepareData(lang1, lang2, reverse=False):
     input_lang, output_lang, pairs = FileReading.readLangs(lang1, lang2, reverse)
     print("Read %s sentence pairs" % len(pairs))
+    pairs = filterPairs(pairs)
+    print("Trimmed to %s sentence pairs" % len(pairs))
     print("Counting words...")
     max_len = 0
     for pair in pairs:
@@ -60,7 +67,7 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
     input_length = input_tensor.size(0)
     target_length = target_tensor.size(0)
 
-    encoder_outputs = torch.zeros(289, encoder.hidden_size, device="cuda")
+    encoder_outputs = torch.zeros(80, encoder.hidden_size, device="cuda")
     loss = 0
 
     for ei in range(input_length):
@@ -160,7 +167,7 @@ def evaluate(encoder, decoder, sentence):
         input_length = input_tensor.size()[0]
         encoder_hidden = encoder.initHidden()
 
-        encoder_outputs = torch.zeros(289, encoder.hidden_size, device="cuda")
+        encoder_outputs = torch.zeros(80, encoder.hidden_size, device="cuda")
 
         for ei in range(input_length):
             encoder_output, encoder_hidden = encoder(input_tensor[ei], encoder_hidden)
@@ -171,9 +178,9 @@ def evaluate(encoder, decoder, sentence):
         decoder_hidden = encoder_hidden
 
         decoded_words = []
-        decoder_attentions = torch.zeros(289, 289)
+        decoder_attentions = torch.zeros(80, 80)
 
-        for di in range(10):
+        for di in range(80):
             decoder_output, decoder_hidden, decoder_attention = decoder(
                 decoder_input, decoder_hidden, encoder_outputs)
             decoder_attentions[di] = decoder_attention.data
@@ -211,7 +218,7 @@ if __name__ == '__main__':
 
     epochs = 10
 
-    trainIters(encoder1, attn_decoder1, epochs, print_every=1)
+    trainIters(encoder1, attn_decoder1, epochs, print_every=100)
     evaluateRandomly(encoder1, attn_decoder1)
     torch.save(encoder1.state_dict(), "/model/encoder.txt")
     torch.save(attn_decoder1.state_dict(), "/model/decoder.txt")
