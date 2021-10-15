@@ -1,0 +1,10 @@
+Treasures from Hungarian museums  Kincsek magyar múzeumokból 
+József Rippl-Rónai: Woman with a bird-cage  Rippl-Rónai József: Kalitkás nõ - Woman with a bird-cage 
+Hungarian National Gallery  Magyar Nemzeti Galéria 
+Woman with a bird-cage is one of the best-known paintings by József Rippl-Rónai, one of the greatest masters of Hungarian painting.  A Kalitkás nõ, a magyar festõmûvészet egyik legnagyobb géniuszának Rippl-Rónai Józsefnek talán legismertebb festménye. 
+Completed in 1892, this large (185.5 x 135 cm) oil painting, which was in the ownership of Károly Bakonyi between 1906 and 1926, was purchased by the Municipal Gallery at one of the Ernst auctions in 1926.  1892-ben készült ez a nagyméretû, 185,5 x 135 cm-es olajkép, mely 1906 és 1926 között Bakonyi Károly tulajdonában volt, 1926-ban vette meg az egyik Ernst - aukción a Fõvárosi Képtár. 
+This may well be one of the most-exhibited Rippl-Rónai paintings.  Just a few of its many appearances include the Art Nouveau exhibition in 1895, Berlin and Paris in 1976, Chicago in 1979, Venice in 1981, and Miami in 1990.  Talán ez az egyik legtöbbet kiállított Rippl-Rónai festmény, elég ha csak az 1895-ös Art Nouveau tárlatot, az 1976-os berlini és párizsi, valamint az 1979-es chicagoi az 1981-es velencei és az 1990-es miami kiállításokat említjük. 
+The painting was also exhibited to great acclaim in Fukuoka, Japan.  Japánba is eljutott a kép, 1994-ben Fukuokában csodálhatták meg. 
+The model's dress forms a mass, where the silhouette is carved into the indistinct background filled with blue and green light.  A modell ruhája tömbszerû, sziluettje belevágódik a ki tudja honnan jövõ, kék-zöld fényekkel teli környezetbe. 
+Set against this charming, but mysterious bluish-green background, is the outline of the unknown model's sensitive, clear-cut face.  E kékeszöld, behízelgõ, ugyanakkor titokzatosságot sugalló háttérre rajzolódik ki a modell - akinek kilétérõl egyébként nem tudunk - érzéki finomságú, tiszta vonalú arcéle. 
+The painting can now be seen in the Hungarian National Gallery's permanent collection.  A festmény a Magyar Nemzeti Galéria állandó kiállításán látható. 

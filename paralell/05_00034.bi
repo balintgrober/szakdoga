@@ -1,0 +1,7 @@
+Ceramic works by Margit Kovács  Kovács Margit kerámiái 
+The sculptor and ceramicist, Margit Kovács (1902-1977), was one of the leading figures in modern Hungarian ceramic art.  Kovács Margit szobrász és keramikus a modern magyar kerámia egyik vezéregyénisége volt. 
+Most of her works are figurative, while many of the content messages are expressed through form and colour.  Munkásságán a figurális formák uralkodnak, ezeken színes formai és színbeli eszközökkel fejez ki tartalmi mondanivalókat is. 
+Her female figures are attractive, appealing, and unmistakeably Hungarian.  Nõalakjai szépek, kecsesek, kedvesek és egyértelmûen magyarok. 
+"I have found most clearly in young peasant girls and old peasant women the feelings with which I can identify most closely and which motivate my work", she recalled in an interview in 1966.  „Fiatal parasztlányokon és öreg parasztasszonyokon láttam meg legtisztábban azokat az érzéseket, amelyek hozzám közel állnak, és munkára biztatnak” - mesélte élményeit egy 1966-ban adott interjúban. 
+Her legendary creations are tales transferred into clay, and she sought to capture the fairytale element from reality.  Fogalommá vált alkotásai kerámiákba álmodott mesék, s a meséket kereste a valóságban is. 
+Each of her moulded works represents a different form of emotional expression and a different life.  Ahány mû, annyi érzelmi kifejezésforma, annyi agyagba formált élet. 

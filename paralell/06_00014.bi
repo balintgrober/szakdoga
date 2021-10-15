@@ -1,0 +1,23 @@
+Aug. 1-15.: Jazz Festival  Aug. 1-15.: Dzsessz Fesztivál 
+The small town of Marciac, located in the southwest of France, is the home of a terrific, annual jazz festival.  A dél-nyugat Franciaországban lévõ kisváros, Marciac a helyszíne az évente megrendezésre kerülõ dzsessz eseménynek. 
+The main square hosts live concerts in the daytime and exhibitions in the evenings.  A fõtéren napközben koncerteket, az esti órákban pedig kiállításokat tartanak. 
+During this lively festival, the town buzzes with talented jazz musicians and delighted audiences.  Erre az idõre megtelik a város dzsessz zenészekkel és zenerajongókkal. 
+This year’s performers will include Jorge Ben Jor, Ibrahim Ferrer, Marcus Miller, Wynton Marsalis, Femi Kuti, the Count Basie Orchestra, Wayne Shorter and Omar Sosa.  A fellépõk közt olyan nagy nevek szerepelnek, mint Jorge Ben Jor, Ibrahim Ferrer, Marcus Miller, Wynton Marsalis, Femi Kuti, The Count Basie Orchestra, Wayne Shorter vagy Omar Sosa. 
+Aug. 2-6.: Great British Beer Festival  Aug. 2-6.: A Nagy Brit Sörfesztivál 
+At the London Olympia exhibition centre, beer buffs can sample from among more than 400 different beers.  A londoni Olimpiai Kiállító Központban több mint 400 fajta brit sört kóstolhatunk végig, ha bírjuk. 
+The unparalleled selection of beer ciders, herb and spice flavoured beers and real ales is complemented by the products from another 300 international breweries, which include Belgian, German, and American specialities.  Ciderek, gyógynövénnyel és fûszerekkel ízesített sörök, barna sörök és más ínyencségek mellett 300 külföldi cég fõzetét is tesztelhetjük, belga, német és amerikai specialitásokat. 
+This beer drinking festival also offers live concerts, contests, and gastronomic events.  A eseményen koncertek, vetélkedõk és gasztronómiai programok is szórakoztatják a látogatókat. 
+Aug. 5-7.: International Surf and Health Festival  Aug. 5-7.: Nemzetközi Szörf és Egészség Fesztivál 
+Muscle flexing will be in top form at this year’s Californian surf festival, which attracts 100,000 visitors every year.  Szépen feszülõ izmok kerülnek a figyelem középpontjába az évente 100.000 látogatót vonzó eseményen. 
+The event kicks off on Friday with the LA County Lifeguard Championships.  A Los Angelesi rendezvényt pénteken életmentõ versennyel nyitják meg. 
+On Saturday, the open competitions begin with surfing, followed by running, swimming and beach volleyball events.  Szombaton hullámlovagló, majd ezt követõen futó, úszó és röplabda sportszámok kerülnek megrendezésre. 
+Aug. 8-16.: Elvis Presley Week  Aug. 8-16.: Elvis Presley-hét 
+The Elvis Presley Week is held annually in Memphis, Tennessee, and this year we’re celebrating the 51st anniversary of Rock and Roll.  A Tennessee állambeli Memphisben minden évben megrendezésre kerülõ Elvis-hét keretében ebben az évben ünnepeljük a Rock'n Roll 51. évfordulóját. 
+The King revolutionized Rock and Roll when he burst onto the music scene in 1954, literally turning it upside down.  Elvis 1954-ben robbant be a zene világába, és fenekestül felforgatta azt. 
+During Elvis Week, fans, both young and old, gather together and enjoy a great mix of music, dance, sporting events and charity concerts.  Az Elvis-héten összegyûlnek a fiatal és az idõsebb rajongók, hogy közösen élvezzék az egész héten át tartó zenét, táncos és sporteseményeket, jótékonysági koncerteket. 
+Aug. 10-12.: Goat King Festival, Ireland  Aug. 10-12.: Kecskekirály Fesztivál, Írország 
+Ireland's longest, oldest, and most unusual festival is held in Killorglin, located right in the heart of County Kerry.  Kerry központja, Killorglin ad otthont Írország leghosszabb és legrégibb fesztiváljának, mely a legszokatlanabb is egyben. 
+Events at the festival include a traditional horse market, a performing arts contest in the pub, and the ceremonial selection of the goat king.  Visitors are also treated to open-air concerts, fireworks.  A programok között szerepel még tradicionális lóvásár, kocsmai elõadómûvész-verseny, kecskekirály-választási ünnep, de rendeznek még szabadtéri koncerteket, tûzijátékokat is. 
+Aug. 12.: Phuket Fireworks Festival  Aug. 12.:  Phuket Tûzijáték Fesztivál 
+Around 4,000 spectacular explosions will light up the night sky in one of Thailand's most popular resorts during the Phuket Fireworks Festival.  A legújabb tûzijátékokat felvonultató eseményen mintegy négyezer robbantás borítja fénybe a thaiföldi város éjszakai egét. 
+The spectacular sight can be enjoyed from Sapanhin Cove, Rang Hill, and from all round the Phuket Bay.  A páratlan látvány jól figyelemmel kísérhetõ a Sapanhin Cove-rõl, a Rang dombról, de a tengerparton ülve is gyönyörködhetünk benne. 

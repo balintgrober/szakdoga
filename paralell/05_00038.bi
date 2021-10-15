@@ -1,0 +1,57 @@
+Small towns, great Hungarians Kis városok, nagy magyarok
+The names of some famous Hungarians are linked to Sárospatak and Sátoraljaújhely, two towns in Hungary's Zemplén region. Zemplén két városához, Sárospatakhoz és Sátoraljaújhelyhez híres magyarok nevei köthetõk.
+The former prides itself on the Rákóczi family, who played an outstanding role in Hungarian history, while the latter can boast the former governor of Hungary, Lajos Kossuth, and the reformer of the Hungarian language, Ferenc Kazincy. Elõbbinek a magyar történelemben kiemelkedõ szerepet játszó Rákóczi-család, utóbbinak Magyarország egykori kormányzója, Kossuth Lajos és a nyelvújító Kazincy Ferenc a büszkesége.
+Memories from the Red Tower Emlékek a Vörös-toronyból
+After arriving in Sárospatak, all tourists head straight for Rákóczi Castle, which can be found in the direction of the main gate along the road of the same name "Rákóczi". Sárospatakra érkezvén minden turista elsõ útja a Rákóczi-várhoz vezet.
+For a long time, nothing was visible from this symbol of the town apart from the giant trees of a forest in the castle gardens. A város jelképébõl -ha a névadó nevét viselõ út felöli fõkapu irányából közelítik meg - sokáig nem látni mást, csak az avar borította Várkert hatalmas fáit.
+One such tree is the famous white acacia. Közülük az egyik, a híres fehérakác fa.
+Its trunk, according to the description in the guidebook, is more than five in girth. Törzsének kerülete - az útikönyv leírása szerint - meghaladja az öt métert.
+Continuing through the castle gates, we are faced by the famous Red Tower building where none of its small, randomly positioned, stone-framed windows are identical. Áthaladva a várkapun elénk magasodott a híres Vörös-torony épülete.
+The building played an important strategic role in the War of Independence, led by Ferenc Rákóczi II. Az épület fontos stratégiai szerepet töltött be a II. Rákóczi Ferenc által vezetett szabadságharc idején.
+This was the place where land distribution reforms and the official liberation of feudal serfs, who were involved in the fighting, were enacted in law. Itt foglalták törvénybe a fegyveres harcokban résztvevõ jobbágyok felszabadítását, és földhöz juttatását.
+If time allows, you should definitely take a look at the study that belonged to Prince György Rákóczi I, which reflects the magnificence of centuries of history with its colourful glazed tiles and pomegranate floral decorations. Ha idõnk engedi feltétlen nézzük meg I. Rákóczi György fejedelem dolgozószobáját is, amely színes, mázas csempéivel, gránátalmás, virágos díszeivel tükrözi vissza a történelmi századok pompáját.
+The Lorántffy lodge, named after the prince's wife, is the building's most spectacular and most photographed architectural jewel. A fejedelem feleségérõl elkeresztelt Lorántffy-lodzsa az épület leglátványosabb, legtöbbet fotózott építészeti ékessége.
+The Hungarian Cambridge A magyar Cambridge
+After feasting our eyes on the view from by the castle, it's also worth visiting the other buildings of cultural and historical significance in the town. Miután kigyönyörködtük magunkat a vár nyújtotta kilátásban, érdemes felkeresni a város kultúrtörténeti jelentõségû épületeit is.
+The teachings of the Reformed Church in Sárospatak signified the height of classical education. A sárospataki református oktatás neve egyet jelentett a klasszikus mûveltség fellegvárával.
+This town, known as 'Athens on the banks of the Bodrog River', has raised public personalities, writers, poets and scientists such as Mihály Vitéz Csokonai, Géza Gárdonyi, Lajos Kossuth, Bertalan Szemere, as well as contemporaries like Gyula Fekete, Dezsô Mészöly and Sándor Pécsi. Olyan közéleti személyiségeket, írókat, költõket és tudósokat nevelt a 'Bodrog-parti Athén', mint Csokonai Vitéz Mihály, Gárdonyi Géza, Kossuth Lajos, Szemere Bertalan vagy a kortársak közül Fekete Gyula, Mészöly Dezsô és Pécsi Sándor.
+Centuries earlier, the outstanding Czech pedagogue, Amos János Comenius, played a significant role in educational and welfare work here. Az ott folyó oktató-nevelõ munkában századokkal ezelõtt nagy szerepe volt a kiváló cseh pedagógusnak, Comenius Amos Jánosnak.
+Today, the Teacher Training Faculty of the University of Miskolc bears his name. Nevét ma, a Miskolci Egyetem Tanárképzõ karának tagozata viseli.
+There are guided tours that depart every hour around the Sárospatak College Library, which was designed by Mihály Pollack, who also dreamt up the Hungarian National Museum. Óránként indul idegenvezetés a Pataki Kollégium Nagykönyvtárában, amit Pollack Mihály - a Magyar Nemzeti Múzeum megálmodója - tervezett.
+Imre Makovecz designed numerous public buildings in "Patak", and the most characteristic features of his art are sprinkled around the town. Makovecz Imre számos pataki középületet tervezett, mûvészetének legjellegzetesebb jegyei sokhelyütt megtalálhatók.
+Suck works include the Cultural House and residential houses at Hild Square. Ilyen a Mûvelõdés Háza vagy említhetjük a Hild tér lakóházait is.
+Sárospatak by night Sárospatak by night
+No trip is ever complete without some gastronomic delights. Egy utazás soha nem lehet teljes gasztronómiai élmények nélkül.
+A good lunch or dinner is an experience in itself, something like visiting a church or museum, but also somewhat different. Egy jó ebéd, vagy vacsora éppúgy - csak éppen másmilyen - élményt nyújt, mint egy templom, vagy egy múzeum.
+In the Castle Restaurant, on the other side of the Bodrog River (at Árpád út 35), we were able to enjoy some very tasty food, which our hosts served with a selection of Tokaj wines. A Bodrog túloldalán lévõ Vár vendéglõben (Árpád út 35.) igazán ízletes falatokat fogyaszthattunk, mellé természetesen tokaji borokat kínáltak vendéglátóink.
+A number of modern works were exhibited on the walkway opposite the restaurant. Az étteremmel szemközti sétányon számos modern alkotást állítottak ki.
+These included a work made from coloured iron plates and erected to the memory of Formula-1 driver, Ayrton Senna, who died ten years ago. Itt található például a tíz éve elhunyt, Forma-1-es pilóta Ayrton Senna emlékére állított, festett vaslemezbõl készült alkotás is.
+Our evening program was arranged in advance. Estére már megvolt a programunk.
+Upon leaving Budapest, we heard several adverts on the car radio for a huge party in the Highlander, which is a disco in Sárospatak with a good reputation. Budapestrõl indulva a kocsiban számtalan beharangozót hallottunk a rádióból, hogy a Highlander-ben, Sárospatak híres diszkójában hatalmas parti lesz.
+The opportunity was too good to miss and we weren't disappointed. Nem hagyhattuk ki ezt a lehetõséget, nem is csalódtunk.
+This entertainment venue on several floors has a professional atmosphere and could easily compete with any equivalent venue in Budapest. A többszintes, profi hangulatú szórakozóhely bármely fõvárosi megfelelõjével könnyen felveszi a versenyt.
+Miracle rabbi and Kossuth as a child Csodarabbi és a gyerek Kossuth
+The last destination for our trip around the Zemplén region was Sátoraljaújhely. Sátoraljaújhely lett zempléni körutazásunk utolsó állomása.
+This town with a great history was originally known as Sátorhalma or Sátoralja. A nagy történelmi múltú város eredeti neve Sátorhalma, illetve Sátoralja volt.
+The settlement, destroyed during the Tartar invasion, was rebuilt in "a new place" ("új hely" in Hungarian) away from the deluge, and this is how it originally got its name. A tatárjárás idején elpusztult települést egy, az áradásoktól mentes "új helyre" építették, innen származik neve.
+First, we wanted to see the tomb of language reformer Ferenc Kazinczy in Széphalom, which is located slightly away from the town centre. Elõször a városközponttól kissé távolabb esõ Széphalmon kerestük fel a nyelvújító Kazinczy Ferenc síremlékét.
+The residence of the writer and promoter of literature - who was in charge of the town's archives until his death - was one of the country's intellectual centres for decades. Az író, irodalomszervezõ - aki haláláig vezette a városi levéltárat - lakhelye évtizedeken át az ország egyik szellemi központja volt.
+After this visit, we tried to climb Szár Hill. Majd a Szár-hegyre próbáltunk feljutni.
+Though we were expecting an easy ten-minute stroll, it turned out to be a hike that lasted almost an hour. Könnyû tízperces sétára számítottunk, ehhez képest majdnem egy órás kirándulás lett belõle.
+Even on the way there, we might have wondered why all the walkers were in sporty dress. Már útközben leeshetett volna a tantusz, miért öltöztek az arra járók annyira sportosan.
+The path takes hikers past a Calvary cross consisting of 14 sections, keeping alive the memory of parts of the country broken off by the Treaty of Trianon. Az út során 14 részbõl álló kálvária mellett halad el a természetjáró.
+The young Lajos Kossuth gave his first speech from the balcony of the Town Hall here. Az újhelyi Városháza erkélyérõl mondta el elsõ beszédét a fiatal Kossuth Lajos.
+This historic site is definitely worth visiting, as is the grave of the miracle-working rabbi Moses Teitelbaum. Ezt a történelmi helyet feltétlenül érdemes felkeresni, s nincs ez másként a csodarabbi Teitelbaum Mózes sírjával sem.
+Apparently, he even cured Lajos Kossuth when he was a child, predicting a great future for him by saying "you will become a standard bearer for your people". A csodarabbi állítólag a gyermek Kossuth Lajost is meggyógyította, és nagy jövõt jósolt neki:
+Getting there Megközelítés
+The M3 motorway takes us from Budapest to Miskolc. Budapestrõl Miskolcig az M3-as autópálya vezet.
+From there we can soon reach Sárospatak on highway 37, and then on to Sátoraljaújhely with a further quarter of an hour's drive. Onnan a 37-es fõúton érhetjük el elõbb Sárospatakot, majd mindössze negyedórányi autózás után Sátoraljaújhelyet.
+If you want to travel by train, take the Miskolc-Szentes-Sátoraljaújhely route. Ha vonattal akarunk utazni a Miskolc-Szentes-Sátoraljaújhely útvonalat válasszuk.
+Excursions Kirándulás
+Just a few kilometres from Sátoraljaújhely, we can come across Fûszérradvány, renowned for the Charles Palace. Sátoraljaújhelytõl mindössze pár kilométerre található Fûszérradvány, melynek híressége a Károlyi kastély.
+The road, leading to the palace, is bordered by black pine trees and forests more than a hundred years' old, and eventually ends at the half-renovated building. A félig felújított épülethez száz évesnél idõsebb erdei és feketefenyõk szegélyezte út vezet.
+There are only two other churches in Hungary bearing a resemblance to the Roman era church at Karcsa. A karcsai román kori templomhoz hasonló mindössze kettõ van az országban.
+The building has inspired many legends. Az épület számos monda ihletõje.
+According to one of them - adapted by Mihály Tompa in his collection of narratives "The Karcsa Church" - it was built by fairies. Az egyik szerint - ezt dolgozza fel Tompa Mihály A karcsai templom címû elbeszélõ gyûjteményében - tündérek építették.
+Visitors to Pácin can enjoy one of the true gems of the Bodrog lowland region. A Pácinba látogatók pedig a Bodrog-köz egyik igazi gyöngyszemében gyönyörködhetnek.
+This is the location for the late-Renaissance style castle commissioned by Gáspár Mágóchy, one of the richest noblemen of this age. Itt áll ugyanis, a kor leggazdagabb fõura, Mágóchy Gáspár által építtetett késõ reneszánsz stílusú kastély.

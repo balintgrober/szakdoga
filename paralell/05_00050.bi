@@ -1,0 +1,11 @@
+The Biatorbágy viaduct  Hírhedt – híres viadukt 
+This viaduct is both famous and infamous.  Nemhiába érdemelte ki a fenti jelzõket Biatorbágy egykori vasúti hídja. 
+Biatorbágy's former railway bridge, which arches gracefully over the Füzes valley, became infamous when it was blown up in 1931, more than seventy years ago.  A Füzes patak völgyét áthidaló viadukt hírhedtté vált mikor, több mint hetven éve, 1931-ben felrobbantották. 
+The detonation occurred as an express train reached the bridge on its way to Vienna.  A detonáció akkor történt, mikor odaért egy Bécsbe tartó gyorsvonat. 
+The engine and all six carriages fell into the deep valley.  A mozdony és 6 kocsi a mélybe zuhant. 
+The man responsible was Szilveszter Matuska, a Viennese trader and manufacturer, who, as it turned out later, was insane.  Matuska Szilveszter, egy bécsi kereskedõ és gyáros volt az elkövetõ, akirõl késõbb kiderült, hogy nem épelméjû. 
+In 1982, the film "The train killer", an American, Hungarian and West German co-production, was made about his life and the train catastrophe.  Életérõl és a vonatszerencsétlenségrõl film is készült "Viadukt" címen (The train killer), amerikai, magyar és német (akkori NSZK) koprodukcióban. 
+The present structure is a reminder of the great era of railway and bridge construction at the turn of the 20th century.  Az építmény másrészt híres, hiszen a magyar vasút- és hídépítés múlt századfordulójának nagy korszakára emlékeztet. 
+The imposing iron bridge can be investigated using a flight of steps, and from the top one gains a magnificent view over the town and the Zsámbék valley.  Az impozáns vasszerkezetére egy jól kiépített lépcsõ vezet fel, tetejérõl nagyszerû kilátás nyílik a városra és a Zsámbéki medencére. 
+The rails have long since been removed from the listed viaduct, and today it can be crossed only on foot or by bicycle.  A ma mûemléknek számító viadukt síneit felszedték, gyalogosan vagy kerékpárral lehet rajta átkelni. 
+In September of last year, the Biatorbágy local government organised its first Viaduct festival in hopes of planting the seeds of a new tradition.  Biatorbágy önkormányzata tavaly szeptemberben rendezte meg elõször hagyományteremtõ jelleggel a Viadukt fesztivált. 

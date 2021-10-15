@@ -1,0 +1,32 @@
+World Calendar May 2005  Világkalendárium 2005 május 
+May 1.: May Day Music Festival  Máj. 1.: May Day Zenei fesztivál 
+This giant party is held annually at Rome's San Giovanni Square, and this celebration of the arrival of springtime has now become a tradition.  Immár hagyománnyá vált, hogy Rómában minden év május elsõ napján tavaszköszöntõ hatalmas bulit szerveznek a San Giovanni téren. 
+The event has continually enhanced its role in the cultural life of Rome and the outside world since 1989.   Az esemény 1989 óta egyre nagyobb szerepet kapott mind Róma, mind pedig a világ kulturális életében. 
+Performers from all over the world appear at the event, and huge crowds gather to listen and dance to live music in this famous square.  The party kicks offs at 14:00.  A délután kettõkor kezdõdõ eseményen számos elõadó lép fel a világ minden tájáról, hatalmas tömeg hallgatja õket, és táncol zenéjükre a téren. 
+May 1.: Tomato Festival  Máj. 1.: Paradicsom fesztivál 
+This event is recommended for lovers of Mediterranean food since it places the spotlight on the tomato, which has a wide range of uses in Sicilian cuisine.  Mediterrán étkek szerelmeseinek ajánljuk az eseményt, ahol fõszerepet kap a paradicsom, amit oly széles körben használnak a szicíliai konyhában. 
+Visitors to the city of Scicli can enjoy street games and musical performances, while local chefs make tasty pizzas at Sampieri Square.  Scicli városában a látogatók élvezik az utcai játékokat és a zenészek elõadásait, miközben a séfek zamatos pizzákat kreálnak a Sampieri téren. 
+May 1-2.: Weymouth International Beach Kite Festival  Máj. 1-2.: Weymouth Sárkányeregetõ fesztivál (Weymouth Beach Kite Festival) 
+Each year Weymouth's golden sandy beach is full of enthusiasts eager to witness Great Britain's largest kite festival.  Weymouth arany homokos strandja minden évben megtelik fanatikusokkal, akik Nagy-Britannia legnagyobb sárkányeregetõ fesztiváljára érkeznek. 
+The event is attended by everyone, from total beginners to the most daring professionals showing off hair-raising tricks.  Mindenki megtalálható az eseményen a kezdõktõl a legmerészebb profikig, akik hajmeresztõ kunsztokat mutatnak be. 
+If you don't already have a sore neck from peering up at the sky, then it's worth having a look at the fireworks and kite flying evening, which starts at 21:30 on Sunday.  Ha a nyakunk még nem fájdult meg az ég kémlelése közben, akkor érdemes megnézni a vasárnap este fél tízkor kezdõdõ esti sárkányeregetéssel egybekötött tûzijátékot is. 
+May 11-22.: Cannes Film Festival  Máj. 11-22.: Cannes Film Fesztivál 
+The Cannes Film Festival is the largest and one of the most famous film festivals in the world.  A Cannes-i film fesztivál a legnagyobb és az egyik leghíresebb a világon. 
+Alongside the red carpet and silver screen, you might also be lucky enough to spot some of the stars on the beach or lounging on their yachts.  A vörös szõnyeg és a filmvászon mellett egy kis szerencsével megleshetünk néhány sztárt a strandon vagy a jachtokon is. 
+Although participation in the film festival is strictly by invitation only, anyone can follow the events on the large TV screen.  Habár a filmfesztiválon szigorúan csak meghívottak vehetnek részt, a nagyképernyõs kivetítõn mindenki nyomon követheti az eseményeket. 
+May 14-16.: Rocket Festival  Máj. 14-16.: Rakéta fesztivál 
+This festival is held in the northeast region of Thailand, although the most spectacular celebrations are held in the Yasothon province.  A fesztivál Thaiföld észak-keleti területén kerül megrendezésre, de a leglátványosabb mulatságok Yasothon megyében zajlanak. 
+The Rocket Festival, like many Thai ceremonies, is intended to ensure a good rice harvest by launching giant rockets into the night sky.  Ez az ünnep, a thaiföldi ceremóniához hasonlóan, a jó rizstermés bebiztosítására hivatott, de itt a cél érdekében hatalmas rakétákat lõnek az égbe. 
+Apparently, this guarantees that plenty of rain will later fall on the freshly sown land.  Állítólag ez kell ahhoz, hogy késõbb bõséges csapadék hulljon a frissen bevetett földekre. 
+Competitions are held to find the highest-flying rocket from among the various homemade appliances.  Ez egyben versenyt is jelent a házilag készült rakéták között: 
+May 22.: Vienna City Marathon  az nyer, akinek magasabbra repül a szerkezete. 
+This large sporting event, which attracts several thousand competitors, starts from Wagram road at 9 o'clock.  Reggel kilenc órakor startol a Wagram útról az a nagyszabású sportesemény, amin több ezer futó vesz részt. 
+An enthusiastic camp of supporters welcomes the finishers at Heldenplatz.  A célba érkezõket a Heldenplatz-on lelkes szurkolótábor várja. 
+If your preparations didn't go to plan, then you can always enter shorter races that cover 15.8, 6.8 and 2.5 kilometres respectively.  A kevésbé felkészültek számára ezen kívül 15.8 km, 6.8 km és a 2.5 km-es gyermek távon lehet nevezni. 
+May 28.: Hamburg: Long Night of Hamburg Museums  Máj. 28.: Hamburg: nyitott múzeumok éjszakája (Long Night of Hamburg Museums) 
+This new Hamburg event follows on the coattails of the successful long nights of museums hosted in Berlin and Munich.  Az eddig Berlinben és Münchenben sikeresen lezajlott nyitott múzeumok éjszakája nyomán most Hamburgban is megrendezik az eseményt. 
+Within the framework of a project that attracts 30,000 visitors a year, 26 museums in Hamburg will keep their doors open all night.  Az évente 30000 látogatót vonzó program keretében 26 hamburgi múzeum tart nyitva egész éjszakán át. 
+Five special bus services will run between the major museums to facilitate night time transport.  Megkönnyítve az éjszakai közlekedést öt speciális buszjárat közlekedik majd a fõbb múzeumok között. 
+May 30.: Memorial Day  Máj. 30.: Háborús hõsök emléknapja 
+The inaugural Memorial Day was held in 1865, based on the initiative of a pharmacist from Waterloo, to commemorate the soldiers who had lost their lives during the Civil War.  A háborús hõsök emléknapjának beiktatását egy waterlooi patikus kezdeményezte 1865-ben, a polgárháborúban elesett katonák emlékére. 
+This national celebration has been held across America on the last Monday in May since 1965, in honour of the country's veterans and war heroes.  Amerika-szerte 1965 óta május utolsó hétfõjén tartják ezt a nemzeti ünnepet, ilyenkor veteránok és háborús hõsök kapnak kitüntetéseket az államtól. 
