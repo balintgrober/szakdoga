@@ -1,6 +1,7 @@
 import math
 import os
 import random
+import sys
 import time
 import torch
 from torch import optim, nn
@@ -21,7 +22,7 @@ EOS_token = 1
 teacher_forcing_ratio = 0.5
 
 def filterPair(p):
-    return len(p[0].split(' ')) < 80 and len(p[1].split(' ')) < 80
+    return len(p[0].split(' ')) <= 60 and len(p[1].split(' ')) <= 60
 
 def filterPairs(pairs):
     return [pair for pair in pairs if filterPair(pair)]
@@ -67,7 +68,7 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
     input_length = input_tensor.size(0)
     target_length = target_tensor.size(0)
 
-    encoder_outputs = torch.zeros(80, encoder.hidden_size, device="cuda")
+    encoder_outputs = torch.zeros(60, encoder.hidden_size, device="cuda")
     loss = 0
 
     for ei in range(input_length):
@@ -167,7 +168,7 @@ def evaluate(encoder, decoder, sentence):
         input_length = input_tensor.size()[0]
         encoder_hidden = encoder.initHidden()
 
-        encoder_outputs = torch.zeros(80, encoder.hidden_size, device="cuda")
+        encoder_outputs = torch.zeros(60, encoder.hidden_size, device="cuda")
 
         for ei in range(input_length):
             encoder_output, encoder_hidden = encoder(input_tensor[ei], encoder_hidden)
@@ -178,9 +179,9 @@ def evaluate(encoder, decoder, sentence):
         decoder_hidden = encoder_hidden
 
         decoded_words = []
-        decoder_attentions = torch.zeros(80, 80)
+        decoder_attentions = torch.zeros(60, 60)
 
-        for di in range(80):
+        for di in range(60):
             decoder_output, decoder_hidden, decoder_attention = decoder(
                 decoder_input, decoder_hidden, encoder_outputs)
             decoder_attentions[di] = decoder_attention.data
@@ -212,13 +213,33 @@ if __name__ == '__main__':
 
     input_lang, output_lang, pairs = prepareData('eng', 'hun', True)
 
+    train_mode = True
     hidden_size = 256
-    encoder1 = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
-    attn_decoder1 = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
 
-    epochs = 10
+    input = input("Train or load models?:")
 
-    trainIters(encoder1, attn_decoder1, epochs, print_every=100)
-    evaluateRandomly(encoder1, attn_decoder1)
-    torch.save(encoder1.state_dict(), "/model/encoder.txt")
-    torch.save(attn_decoder1.state_dict(), "/model/decoder.txt")
+    if input == "train":
+        train_mode = True
+    elif input == "load":
+        train_mode = False
+    else:
+        sys.exit("Wrong input!")
+
+    if train_mode:
+        encoder1 = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
+        attn_decoder1 = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
+
+        epochs = 10
+
+        trainIters(encoder1, attn_decoder1, epochs, print_every=1000)
+        evaluateRandomly(encoder1, attn_decoder1)
+        torch.save(encoder1.state_dict(), "szakdoga/model/encoder.pt")
+        torch.save(attn_decoder1.state_dict(), "szakdoga/model/decoder.pt")
+
+    else:
+        encoder = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
+        attn_decoder = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
+        encoder.load_state_dict(torch.load("szakdoga/model/encoder.pt"))
+        attn_decoder.load_state_dict(torch.load("szakdoga/model/decoder.pt"))
+        encoder.eval()
+        attn_decoder.eval()
