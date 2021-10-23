@@ -29,13 +29,13 @@ def readLangs(lang1, lang2, reverse=False):
     hu_lines = []
 
     for en_file_name in en_files:
-        en_file = open("separate/english/" + en_file_name).read().strip().split('\n')
+        en_file = open("separate/english/" + en_file_name, encoding="ISO-8859-1").read().strip().split('\n')
         for en_line in en_file:
             en_lines.append(en_line)
 
 
     for hu_file_name in hu_files:
-        hu_file = open("separate/hungarian/" + hu_file_name).read().strip().split('\n')
+        hu_file = open("separate/hungarian/" + hu_file_name, encoding="ISO-8859-1").read().strip().split('\n')
         for hu_line in hu_file:
             hu_lines.append(hu_line)
 
