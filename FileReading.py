@@ -22,20 +22,20 @@ def normalizeString(s):
 def readLangs(lang1, lang2, reverse=False):
     print("Reading lines...")
 
-    hu_files = os.listdir("szakdoga/separate/hungarian")
-    en_files = os.listdir("szakdoga/separate/english")
+    hu_files = os.listdir("separate/hungarian")
+    en_files = os.listdir("separate/english")
 
     en_lines = []
     hu_lines = []
 
     for en_file_name in en_files:
-        en_file = open("szakdoga/separate/english/" + en_file_name).read().strip().split('\n')
+        en_file = open("separate/english/" + en_file_name).read().strip().split('\n')
         for en_line in en_file:
             en_lines.append(en_line)
 
 
     for hu_file_name in hu_files:
-        hu_file = open("szakdoga/separate/hungarian/" + hu_file_name).read().strip().split('\n')
+        hu_file = open("separate/hungarian/" + hu_file_name).read().strip().split('\n')
         for hu_line in hu_file:
             hu_lines.append(hu_line)
 

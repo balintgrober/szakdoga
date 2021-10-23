@@ -22,7 +22,7 @@ EOS_token = 1
 teacher_forcing_ratio = 0.5
 
 def filterPair(p):
-    return len(p[0].split(' ')) <= 60 and len(p[1].split(' ')) <= 60
+    return len(p[0].split(' ')) < 60 and len(p[1].split(' ')) < 60
 
 def filterPairs(pairs):
     return [pair for pair in pairs if filterPair(pair)]
@@ -233,13 +233,13 @@ if __name__ == '__main__':
 
         trainIters(encoder1, attn_decoder1, epochs, print_every=1000)
         evaluateRandomly(encoder1, attn_decoder1)
-        torch.save(encoder1.state_dict(), "szakdoga/model/encoder.pt")
-        torch.save(attn_decoder1.state_dict(), "szakdoga/model/decoder.pt")
+        torch.save(encoder1.state_dict(), "model/encoder.pt")
+        torch.save(attn_decoder1.state_dict(), "model/decoder.pt")
 
     else:
         encoder = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
         attn_decoder = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
-        encoder.load_state_dict(torch.load("szakdoga/model/encoder.pt"))
-        attn_decoder.load_state_dict(torch.load("szakdoga/model/decoder.pt"))
+        encoder.load_state_dict(torch.load("model/encoder.pt"))
+        attn_decoder.load_state_dict(torch.load("model/decoder.pt"))
         encoder.eval()
         attn_decoder.eval()
