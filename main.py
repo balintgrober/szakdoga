@@ -119,18 +119,20 @@ def timeSince(since, percent):
     rs = es - s
     return '%s (- %s)' % (asMinutes(s), asMinutes(rs))
 
-def trainIters(encoder, decoder, epochs, print_every=1000, plot_every=100, learning_rate=0.01):
-    start = time.time()
-    plot_losses = []
-    print_loss_total = 0
-    plot_loss_total = 0
+def trainIters(encoder, decoder, epochs, print_every=1000, plot_every=100, learning_rate=0.001):
 
-    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate)
-    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate)
+    plot_losses = []
+
+
+    encoder_optimizer = optim.Adam(encoder.parameters(), lr=learning_rate)
+    decoder_optimizer = optim.Adam(decoder.parameters(), lr=learning_rate)
     training_pairs = [tensorFromPair(pair) for pair in pairs]
     criterion = nn.NLLLoss()
 
     for epoch in range(1, epochs + 1):
+        start = time.time()
+        print_loss_total = 0
+        plot_loss_total = 0
         print("Epoch%d:" % (epoch))
         for i in range(1, len(training_pairs)):
             training_pair = training_pairs[i - 1]
@@ -231,7 +233,7 @@ if __name__ == '__main__':
 
         epochs = 10
 
-        trainIters(encoder1, attn_decoder1, epochs, print_every=1000)
+        trainIters(encoder1, attn_decoder1, epochs, print_every=10000)
         evaluateRandomly(encoder1, attn_decoder1)
         torch.save(encoder1.state_dict(), "model/encoder.pt")
         torch.save(attn_decoder1.state_dict(), "model/decoder.pt")
@@ -243,3 +245,4 @@ if __name__ == '__main__':
         attn_decoder.load_state_dict(torch.load("model/decoder.pt"))
         encoder.eval()
         attn_decoder.eval()
+        evaluateRandomly(encoder, attn_decoder)
