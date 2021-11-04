@@ -6,11 +6,12 @@ import time
 import torch
 from torch import optim, nn
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
+from nltk.translate.bleu_score import sentence_bleu
 
 import DecoderRNN
 import EncoderRNN
 
-plt.switch_backend('agg')
 import matplotlib.ticker as ticker
 import numpy as np
 
@@ -22,7 +23,7 @@ EOS_token = 1
 teacher_forcing_ratio = 0.5
 
 def filterPair(p):
-    return len(p[0].split(' ')) < 60 and len(p[1].split(' ')) < 60
+    return len(p[0].split(' ')) < 10 and len(p[1].split(' ')) < 10
 
 def filterPairs(pairs):
     return [pair for pair in pairs if filterPair(pair)]
@@ -68,7 +69,7 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
     input_length = input_tensor.size(0)
     target_length = target_tensor.size(0)
 
-    encoder_outputs = torch.zeros(60, encoder.hidden_size, device="cuda")
+    encoder_outputs = torch.zeros(10, encoder.hidden_size, device="cuda")
     loss = 0
 
     for ei in range(input_length):
@@ -163,6 +164,9 @@ def showPlot(points):
     loc = ticker.MultipleLocator(base=0.2)
     ax.yaxis.set_major_locator(loc)
     plt.plot(points)
+    plt.title('Training Results')
+    plt.savefig('training_loss.png')
+    plt.close('all')
 
 def evaluate(encoder, decoder, sentence):
     with torch.no_grad():
@@ -170,7 +174,7 @@ def evaluate(encoder, decoder, sentence):
         input_length = input_tensor.size()[0]
         encoder_hidden = encoder.initHidden()
 
-        encoder_outputs = torch.zeros(60, encoder.hidden_size, device="cuda")
+        encoder_outputs = torch.zeros(10, encoder.hidden_size, device="cuda")
 
         for ei in range(input_length):
             encoder_output, encoder_hidden = encoder(input_tensor[ei], encoder_hidden)
@@ -181,9 +185,9 @@ def evaluate(encoder, decoder, sentence):
         decoder_hidden = encoder_hidden
 
         decoded_words = []
-        decoder_attentions = torch.zeros(60, 60)
+        decoder_attentions = torch.zeros(10, 10)
 
-        for di in range(60):
+        for di in range(10):
             decoder_output, decoder_hidden, decoder_attention = decoder(
                 decoder_input, decoder_hidden, encoder_outputs)
             decoder_attentions[di] = decoder_attention.data
@@ -199,6 +203,19 @@ def evaluate(encoder, decoder, sentence):
         return decoded_words, decoder_attentions[:di + 1]
 
 
+def calculate_bleu_score(encoder, decoder):
+    sum = 0
+    for i in range(len(pairs)):
+        pair = pairs[i]
+        candidate_words, attentions = evaluate(encoder, decoder, pair[0])
+        candidate =  ' '.join(candidate_words)
+        reference = [pair[1]]
+        BLEU_score = sentence_bleu(reference, candidate)
+        sum += BLEU_score
+
+    avg_BLEU = sum / len(pairs)
+    print("BLEU score -> {}".format(avg_BLEU))
+
 def evaluateRandomly(encoder, decoder, n=10):
     for i in range(n):
         pair = random.choice(pairs)
@@ -209,6 +226,28 @@ def evaluateRandomly(encoder, decoder, n=10):
         print('<', output_sentence)
         print('')
 
+
+def showAttention(input_sentence, output_words, attentions):
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    cax = ax.matshow(attentions.numpy(), cmap='bone')
+    fig.colorbar(cax)
+
+    ax.set_xticklabels([''] + input_sentence.split(' ') +
+                       ['<EOS>'], rotation=90)
+    ax.set_yticklabels([''] + output_words)
+
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+    ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
+
+    plt.show()
+
+def evaluateAndShowAttention(input_sentence):
+    output_words, attentions = evaluate(
+        encoder1, attn_decoder1, input_sentence)
+    print('input =', input_sentence)
+    print('output =', ' '.join(output_words))
+    showAttention(input_sentence, output_words, attentions)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -231,9 +270,9 @@ if __name__ == '__main__':
         encoder1 = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
         attn_decoder1 = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
 
-        epochs = 10
+        epochs = 30
 
-        trainIters(encoder1, attn_decoder1, epochs, print_every=10000)
+        trainIters(encoder1, attn_decoder1, epochs, print_every=10000, plot_every=1000)
         evaluateRandomly(encoder1, attn_decoder1)
         torch.save(encoder1.state_dict(), "model/encoder.pt")
         torch.save(attn_decoder1.state_dict(), "model/decoder.pt")
@@ -246,3 +285,8 @@ if __name__ == '__main__':
         encoder.eval()
         attn_decoder.eval()
         evaluateRandomly(encoder, attn_decoder)
+        evaluateAndShowAttention(pairs[0])
+        evaluateAndShowAttention(pairs[1])
+        evaluateAndShowAttention(pairs[2])
+        evaluateAndShowAttention(pairs[3])
+        calculate_bleu_score(encoder, attn_decoder)
