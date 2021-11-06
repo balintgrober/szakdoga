@@ -120,13 +120,13 @@ def timeSince(since, percent):
     rs = es - s
     return '%s (- %s)' % (asMinutes(s), asMinutes(rs))
 
-def trainIters(encoder, decoder, epochs, print_every=1000, plot_every=100, learning_rate=0.001):
+def trainIters(encoder, decoder, epochs, print_every=1000, plot_every=100, learning_rate=0.01):
 
     plot_losses = []
 
 
-    encoder_optimizer = optim.Adam(encoder.parameters(), lr=learning_rate)
-    decoder_optimizer = optim.Adam(decoder.parameters(), lr=learning_rate)
+    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate)
+    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate)
     training_pairs = [tensorFromPair(pair) for pair in pairs]
     criterion = nn.NLLLoss()
 
@@ -227,7 +227,7 @@ def evaluateRandomly(encoder, decoder, n=10):
         print('')
 
 
-def showAttention(input_sentence, output_words, attentions):
+def showAttention(input_sentence, output_words, attentions, fig_name):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     cax = ax.matshow(attentions.numpy(), cmap='bone')
@@ -240,14 +240,16 @@ def showAttention(input_sentence, output_words, attentions):
     ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
     ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
 
-    plt.show()
+    plt.savefig(fig_name + ".png")
 
-def evaluateAndShowAttention(input_sentence):
+    plt.close("all")
+
+def evaluateAndShowAttention(input_sentence, encoder, decoder, fig_name):
     output_words, attentions = evaluate(
-        encoder1, attn_decoder1, input_sentence)
+        encoder, decoder, input_sentence)
     print('input =', input_sentence)
     print('output =', ' '.join(output_words))
-    showAttention(input_sentence, output_words, attentions)
+    showAttention(input_sentence, output_words, attentions, fig_name)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -270,7 +272,7 @@ if __name__ == '__main__':
         encoder1 = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
         attn_decoder1 = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
 
-        epochs = 30
+        epochs = 15
 
         trainIters(encoder1, attn_decoder1, epochs, print_every=10000, plot_every=1000)
         evaluateRandomly(encoder1, attn_decoder1)
@@ -285,8 +287,8 @@ if __name__ == '__main__':
         encoder.eval()
         attn_decoder.eval()
         evaluateRandomly(encoder, attn_decoder)
-        evaluateAndShowAttention(pairs[0])
-        evaluateAndShowAttention(pairs[1])
-        evaluateAndShowAttention(pairs[2])
-        evaluateAndShowAttention(pairs[3])
+        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention1")
+        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention2")
+        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention3")
+        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention4")
         calculate_bleu_score(encoder, attn_decoder)
