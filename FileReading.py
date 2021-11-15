@@ -68,10 +68,10 @@ def readLangs(lang1, lang2, reverse=False):
     print("English length frequencies:", frequency)
 
     freq = []
-    for x in list(frequency)[60:]:
+    for x in list(frequency)[12:]:
         freq.append(frequency[x])
 
-    print("Sentences with more than 60 words:", sum(freq))
+    print("Sentences with more than 12 words:", sum(freq))
 
     if reverse:
         pairs = [list(reversed(p)) for p in pairs]
