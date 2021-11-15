@@ -8,6 +8,7 @@ from torch import optim, nn
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 from nltk.translate.bleu_score import sentence_bleu
+from sklearn.model_selection import train_test_split
 
 import DecoderRNN
 import EncoderRNN
@@ -23,7 +24,7 @@ EOS_token = 1
 teacher_forcing_ratio = 0.5
 
 def filterPair(p):
-    return len(p[0].split(' ')) < 10 and len(p[1].split(' ')) < 10
+    return len(p[0].split(' ')) < 12 and len(p[1].split(' ')) < 12
 
 def filterPairs(pairs):
     return [pair for pair in pairs if filterPair(pair)]
@@ -42,7 +43,7 @@ def prepareData(lang1, lang2, reverse=False):
             if len(sentence.split(' ')) > max_len:
                 max_len = len(sentence.split(' '))
 
-    print("The longest sentence in the corpus has", max_len, "words")
+    print("The longest sentence in the teaching corpus has", max_len, "words")
     print("Counted words:")
     print(input_lang.name, input_lang.n_words)
     print(output_lang.name, output_lang.n_words)
@@ -69,12 +70,11 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
     input_length = input_tensor.size(0)
     target_length = target_tensor.size(0)
 
-    encoder_outputs = torch.zeros(10, encoder.hidden_size, device="cuda")
+    encoder_outputs = torch.zeros(12, encoder.hidden_size, device="cuda")
     loss = 0
 
     for ei in range(input_length):
-        encoder_output, encoder_hidden = encoder(
-            input_tensor[ei], encoder_hidden)
+        encoder_output, encoder_hidden = encoder(input_tensor[ei], encoder_hidden)
         encoder_outputs[ei] = encoder_output[0, 0]
 
     decoder_input = torch.tensor([[SOS_token]], device="cuda")
@@ -85,14 +85,12 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
 
     if use_teacher_forcing:
         for di in range(target_length):
-            decoder_output, decoder_hidden, decoder_attention = decoder(
-                decoder_input, decoder_hidden, encoder_outputs)
+            decoder_output, decoder_hidden, decoder_attention = decoder(decoder_input, decoder_hidden, encoder_outputs)
             loss += criterion(decoder_output, target_tensor[di])
             decoder_input = target_tensor[di]
     else:
         for di in range(target_length):
-            decoder_output, decoder_hidden, decoder_attention = decoder(
-                decoder_input, decoder_hidden, encoder_outputs)
+            decoder_output, decoder_hidden, decoder_attention = decoder(decoder_input, decoder_hidden, encoder_outputs)
             topv, topi = decoder_output.topk(1)
             decoder_input = topi.squeeze().detach()
 
@@ -120,14 +118,13 @@ def timeSince(since, percent):
     rs = es - s
     return '%s (- %s)' % (asMinutes(s), asMinutes(rs))
 
-def trainIters(encoder, decoder, epochs, print_every=1000, plot_every=100, learning_rate=0.01):
+def trainIters(encoder, decoder, epochs, print_every=1000, plot_every=1000, learning_rate=0.001):
 
     plot_losses = []
 
-
     encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate)
     decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate)
-    training_pairs = [tensorFromPair(pair) for pair in pairs]
+    training_pairs = [tensorFromPair(pair) for pair in train_pairs]
     criterion = nn.NLLLoss()
 
     for epoch in range(1, epochs + 1):
@@ -174,7 +171,7 @@ def evaluate(encoder, decoder, sentence):
         input_length = input_tensor.size()[0]
         encoder_hidden = encoder.initHidden()
 
-        encoder_outputs = torch.zeros(10, encoder.hidden_size, device="cuda")
+        encoder_outputs = torch.zeros(12, encoder.hidden_size, device="cuda")
 
         for ei in range(input_length):
             encoder_output, encoder_hidden = encoder(input_tensor[ei], encoder_hidden)
@@ -185,11 +182,10 @@ def evaluate(encoder, decoder, sentence):
         decoder_hidden = encoder_hidden
 
         decoded_words = []
-        decoder_attentions = torch.zeros(10, 10)
+        decoder_attentions = torch.zeros(12, 12)
 
-        for di in range(10):
-            decoder_output, decoder_hidden, decoder_attention = decoder(
-                decoder_input, decoder_hidden, encoder_outputs)
+        for di in range(12):
+            decoder_output, decoder_hidden, decoder_attention = decoder(decoder_input, decoder_hidden, encoder_outputs)
             decoder_attentions[di] = decoder_attention.data
             topv, topi = decoder_output.data.topk(1)
             if topi.item() == EOS_token:
@@ -203,22 +199,35 @@ def evaluate(encoder, decoder, sentence):
         return decoded_words, decoder_attentions[:di + 1]
 
 
-def calculate_bleu_score(encoder, decoder):
+def calculate_bleu_score_test(encoder, decoder):
     sum = 0
-    for i in range(len(pairs)):
-        pair = pairs[i]
+    for i in range(len(test_pairs)):
+        pair = test_pairs[i]
         candidate_words, attentions = evaluate(encoder, decoder, pair[0])
-        candidate =  ' '.join(candidate_words)
+        candidate = ' '.join(candidate_words)
         reference = [pair[1]]
         BLEU_score = sentence_bleu(reference, candidate)
         sum += BLEU_score
 
     avg_BLEU = sum / len(pairs)
-    print("BLEU score -> {}".format(avg_BLEU))
+    print("BLEU test score -> {}".format(avg_BLEU))
 
-def evaluateRandomly(encoder, decoder, n=10):
+def calculate_bleu_score_train(encoder, decoder):
+    sum = 0
+    for i in range(len(train_pairs)):
+        pair = train_pairs[i]
+        candidate_words, attentions = evaluate(encoder, decoder, pair[0])
+        candidate = ' '.join(candidate_words)
+        reference = [pair[1]]
+        BLEU_score = sentence_bleu(reference, candidate)
+        sum += BLEU_score
+
+    avg_BLEU = sum / len(pairs)
+    print("BLEU train score -> {}".format(avg_BLEU))
+
+def evaluateRandomly(encoder, decoder, n=20):
     for i in range(n):
-        pair = random.choice(pairs)
+        pair = random.choice(test_pairs)
         print('>', pair[0])
         print('=', pair[1])
         output_words, attentions = evaluate(encoder, decoder, pair[0])
@@ -256,8 +265,10 @@ if __name__ == '__main__':
 
     input_lang, output_lang, pairs = prepareData('eng', 'hun', True)
 
+    train_pairs, test_pairs = train_test_split(pairs, test_size=0.2, train_size=0.8, random_state=0)
+
     train_mode = True
-    hidden_size = 256
+    hidden_size = 1024
 
     input = input("Train or load models?:")
 
@@ -272,12 +283,18 @@ if __name__ == '__main__':
         encoder1 = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
         attn_decoder1 = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
 
-        epochs = 15
+        epochs = 30
 
-        trainIters(encoder1, attn_decoder1, epochs, print_every=10000, plot_every=1000)
+        trainIters(encoder1, attn_decoder1, epochs, print_every=10000)
         evaluateRandomly(encoder1, attn_decoder1)
         torch.save(encoder1.state_dict(), "model/encoder.pt")
         torch.save(attn_decoder1.state_dict(), "model/decoder.pt")
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention1")
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention2")
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention3")
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention4")
+        calculate_bleu_score_train(encoder1, attn_decoder1)
+        calculate_bleu_score_test(encoder1, attn_decoder1)
 
     else:
         encoder = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
@@ -287,8 +304,9 @@ if __name__ == '__main__':
         encoder.eval()
         attn_decoder.eval()
         evaluateRandomly(encoder, attn_decoder)
-        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention1")
-        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention2")
-        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention3")
-        evaluateAndShowAttention(random.choice(pairs)[0], encoder, attn_decoder, "attention4")
-        calculate_bleu_score(encoder, attn_decoder)
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention1")
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention2")
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention3")
+        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention4")
+        calculate_bleu_score_train(encoder, attn_decoder)
+        calculate_bleu_score_test(encoder, attn_decoder)
