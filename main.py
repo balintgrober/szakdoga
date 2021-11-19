@@ -24,7 +24,7 @@ EOS_token = 1
 teacher_forcing_ratio = 0.5
 
 def filterPair(p):
-    return len(p[0].split(' ')) < 12 and len(p[1].split(' ')) < 12
+    return len(p[0].split(' ')) < 30 and len(p[1].split(' ')) < 30
 
 def filterPairs(pairs):
     return [pair for pair in pairs if filterPair(pair)]
@@ -71,7 +71,7 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
     input_length = input_tensor.size(0)
     target_length = target_tensor.size(0)
 
-    encoder_outputs = torch.zeros(12, encoder.hidden_size, device="cuda")
+    encoder_outputs = torch.zeros(30, encoder.hidden_size, device="cuda")
     loss = 0
 
     for ei in range(input_length):
@@ -181,7 +181,7 @@ def evaluate(encoder, decoder, sentence):
         encoder_h_hidden = encoder.initHidden()
         encoder_c_hidden = encoder.initHidden()
 
-        encoder_outputs = torch.zeros(12, encoder.hidden_size, device="cuda")
+        encoder_outputs = torch.zeros(30, encoder.hidden_size, device="cuda")
 
         for ei in range(input_length):
             encoder_output, encoder_hiddens = encoder(input_tensor[ei], encoder_h_hidden, encoder_c_hidden)
@@ -195,9 +195,9 @@ def evaluate(encoder, decoder, sentence):
         decoder_c_hidden = encoder_c_hidden
 
         decoded_words = []
-        decoder_attentions = torch.zeros(12, 12)
+        decoder_attentions = torch.zeros(30, 30)
 
-        for di in range(12):
+        for di in range(30):
             decoder_output, decoder_hiddens, decoder_attention = decoder(decoder_input, decoder_h_hidden, decoder_c_hidden, encoder_outputs)
             decoder_attentions[di] = decoder_attention.data
             topv, topi = decoder_output.data.topk(1)
@@ -298,7 +298,7 @@ if __name__ == '__main__':
         encoder1 = EncoderRNN.EncoderRNN(input_lang.n_words, hidden_size).to("cuda")
         attn_decoder1 = DecoderRNN.AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to("cuda")
 
-        epochs = 30
+        epochs = 10
 
         trainIters(encoder1, attn_decoder1, epochs, print_every=10000)
         evaluateRandomly(encoder1, attn_decoder1)
