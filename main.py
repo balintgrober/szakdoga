@@ -225,7 +225,19 @@ def calculate_bleu_score_train(encoder, decoder):
     avg_BLEU = sum / len(pairs)
     print("BLEU train score -> {}".format(avg_BLEU))
 
-def evaluateRandomly(encoder, decoder, n=20):
+def evaluateRandomly(encoder, decoder, n=10):
+
+    print("From train set:")
+    for i in range(n):
+        pair = random.choice(train_pairs)
+        print('>', pair[0])
+        print('=', pair[1])
+        output_words, attentions = evaluate(encoder, decoder, pair[0])
+        output_sentence = ' '.join(output_words)
+        print('<', output_sentence)
+        print('')
+
+    print("From test set:")
     for i in range(n):
         pair = random.choice(test_pairs)
         print('>', pair[0])
@@ -289,8 +301,8 @@ if __name__ == '__main__':
         evaluateRandomly(encoder1, attn_decoder1)
         torch.save(encoder1.state_dict(), "model/encoder.pt")
         torch.save(attn_decoder1.state_dict(), "model/decoder.pt")
-        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention1")
-        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention2")
+        evaluateAndShowAttention(random.choice(train_pairs)[0], encoder1, attn_decoder1, "attention1")
+        evaluateAndShowAttention(random.choice(train_pairs)[0], encoder1, attn_decoder1, "attention2")
         evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention3")
         evaluateAndShowAttention(random.choice(test_pairs)[0], encoder1, attn_decoder1, "attention4")
         calculate_bleu_score_train(encoder1, attn_decoder1)
@@ -304,8 +316,8 @@ if __name__ == '__main__':
         encoder.eval()
         attn_decoder.eval()
         evaluateRandomly(encoder, attn_decoder)
-        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention1")
-        evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention2")
+        evaluateAndShowAttention(random.choice(train_pairs)[0], encoder, attn_decoder, "attention1")
+        evaluateAndShowAttention(random.choice(train_pairs)[0], encoder, attn_decoder, "attention2")
         evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention3")
         evaluateAndShowAttention(random.choice(test_pairs)[0], encoder, attn_decoder, "attention4")
         calculate_bleu_score_train(encoder, attn_decoder)
